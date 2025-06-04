@@ -111,13 +111,16 @@ function getWorkItemDefinition(thisWorkItem: Models.WorkItem): IPromise<Models.W
 }
 
 function getLastPathValue(pathText: string): string {
-  if (pathText.length > 0) {
-    let pathArray: string[] = pathText.split("\\");
-    return pathArray[pathArray.length - 1];
+  if (!pathText) {
+    return "";
   }
-  else {
+
+  if (pathText.length === 0) {
     return pathText;
   }
+
+  let pathArray: string[] = pathText.split("\\");
+  return pathArray[pathArray.length - 1];
 }
 
 function prepare(workItems: Models.WorkItem[]) {
