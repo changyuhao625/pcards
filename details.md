@@ -26,7 +26,7 @@ This Extension supports multi-selecting Work Items, and will print multiple card
     - Iteration
     - Tags
 
-![Printing Multple Cards](static/img/card-print.png)
+![Printing Multiple Cards](static/img/card-print.png)
 
 ## Credits
 
